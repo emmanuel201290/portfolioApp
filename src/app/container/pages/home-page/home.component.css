@@ -1,0 +1,50 @@
+.home{
+    box-sizing: inherit;/**need*/
+    display: flex;/**need*/
+    align-items: center;/**need*/   
+}
+
+h1{
+    font-weight: 400;
+}
+
+p{
+    letter-spacing: 0.1em;
+    font-size: 1.25em;
+    margin: 0.25em 0 0 0;
+}
+
+.home header{
+    box-sizing: inherit;
+    border: 0;
+    font: inherit;
+    vertical-align: baseline;
+    display: block;
+    margin: 0 0 1.5em 0;
+    flex-grow: 1;
+    flex-shrink: 1;
+    padding: 3.5em 2.5em;
+    margin-bottom: 0;
+    width: 100%;
+}
+header > p{
+    color:#aaa;
+}
+
+.pic {
+    position:relative;
+    flex-shrink: 0;/*Nivel de contraccion de los flex item*/
+    flex-grow: 0;/*Factor de crecimiento de un elemento flexible**/
+    width: 19em;
+    height: 100%;
+}
+
+.pic img{
+   /*position: relative;*/
+   /* display: block;*/
+   /* position: absolute;*/
+    width: 100%;
+    height: 100%;
+    /*object-position: center;*/
+}
+

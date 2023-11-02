@@ -1,0 +1,74 @@
+
+<div class="slideButton row p-5 animate__animated ">
+
+  <div class="animate__animated animate__fadeIn animate__delay-1s">
+    <h2 class="mb-4">Contact Me</h2>
+    <hr>
+      <div class="col">
+        <form [formGroup]="myForm" autocomplete="off" (ngSubmit)="onSave()">
+          <!--Field name-->
+            <div class="mb-3 row">
+               <label class="col-sm-2 col-form-label text-secondary">Name</label>
+               <div class="col-sm-9">
+                    <input type="text"
+                           class="form-control"
+                           formControlName="name"
+                           placeholder="Name">
+                           <span *ngIf="isValidField('name')" class="form-text text-danger">
+                            <!-- Debe de ser de 3 letras -->
+                            {{ getFieldError('name') }}
+                        </span>
+               </div>
+            </div>
+    
+             <!--Field email-->
+             <div class="mb-3 row">
+              <label class="col-sm-2 col-form-label text-secondary">Email</label>
+              <div class="col-sm-9">
+                   <input type="text"
+                          class="form-control"
+                          formControlName="email"
+                          placeholder="Email"
+                   >
+                   <span *ngIf="isValidField('email')" class="form-text text-danger">
+                    <!-- Debe de ser de 3 letras -->
+                    {{ getFieldError('email')}}
+                </span>
+              </div>
+           </div>
+    
+            <!--Field Subject-->
+            <div class="mb-3 row">
+              <label class="col-sm-2 col-form-label text-secondary">Subject</label>
+              <div class="col-sm-9">
+                   <input type="text"
+                          class="form-control"
+                          formControlName="subject"
+                          placeholder="Subject"
+                   >
+                   <span *ngIf="isValidField('subject')" class="form-text text-danger">
+                    <!-- Debe de ser de 3 letras -->
+                    {{ getFieldError('subject')}}
+                </span>
+              </div>
+           </div>
+    
+            <!--Field message-->
+            <div class="mb-3 row">
+              <label class="col-sm-2 col-form-label text-secondary">Message</label>
+              <div class="col-sm-9">
+                <textarea class="form-control" formControlName="message" placeholder="Leave a message here" id="floatingTextarea2" style="height: 100px"></textarea>
+              </div>
+           </div>
+           <div class="w-100" style="display: flex; justify-content: end;">
+             <button type="submit" class="btn btn-primary" >Send Message</button>
+           </div>
+        </form>
+    
+  </div>
+</div>
+
+
+
+
+

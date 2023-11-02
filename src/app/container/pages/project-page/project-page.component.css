@@ -1,0 +1,32 @@
+/*.container-project{
+   height: auto;
+   animation-duration: 2s;
+   animation-name: slidein;
+}*/
+
+.container-project h1{
+   margin-top: 3rem;
+   margin-left: 2rem;
+   margin-bottom: 2rem;
+}
+
+#p-dsc {
+        margin-left: 2rem;
+        text-justify: 'center';
+        font-size: 1em;
+        line-height: 2rem;
+        color:#777777;
+}
+
+/*
+@keyframes slidein {
+        from {
+        height: 25em;
+        }
+        to {
+           height: 120em;
+        }
+    }*/
+
+
+

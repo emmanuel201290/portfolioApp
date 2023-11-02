@@ -1,0 +1,37 @@
+.box_custom {
+    background-color: blue;
+
+}
+
+.nav-bar{
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  color: #777777;
+}
+
+.nav-bar li{
+    margin: 1rem;
+    list-style: none;
+    cursor: pointer;
+}
+
+.nav-bar li:hover{
+    color: #ffffff;
+}
+
+li > a.active { color: #ffffff }
+
+i:after{
+  display: flex;
+  content: "";
+  width: 3rem;
+  height: 0;
+  background-color: white;
+  position: absolute;
+  transition: all .4s;
+}
+
+i:hover:after{
+  height: -4rem;
+}

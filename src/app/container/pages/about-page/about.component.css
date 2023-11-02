@@ -1,0 +1,14 @@
+.about{
+    padding: 2em;
+}
+.about p{
+    margin-top: 2em;
+    font-size: 1em;
+    line-height: 2rem;
+    color:#777777;
+}
+
+.about p::first-letter{
+    font-size:3em;
+	font-family:serif;
+}

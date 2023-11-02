@@ -1,0 +1,19 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0;     font-family: "Source Sans Pro", sans-serif; background: black;  }
+
+.slideButton{
+    animation-name: slide;
+    transition: fadeIn 3s;
+    height: var(--h-to);/*20em*/
+  }
+  
+  @keyframes slide {
+    from {
+      height: var(--h-from)/*30em;*/
+    }
+    to {
+      height: var(--h-to)/*20em;*/
+    }
+  }

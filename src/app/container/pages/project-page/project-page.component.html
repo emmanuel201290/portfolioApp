@@ -1,0 +1,28 @@
+<div class="slideButton p-2 container-project mb-1 animate__animated">
+    <div class="animate__animated animate__fadeIn animate__delay-1s">
+        <h1>Look my projects</h1>
+        <p id="p-dsc">
+            I work in the customs department of Nicaragua and develop desktop and web applications with copyright of the institution, which prevents me from showing the source codes, however, I have web applications created in my learning process. Check out!
+        </p>
+       <div class="row p-4 " >
+        <div *ngFor="let pjt of myProject; let i = index " class="col-4 col-md-4 col-sm-12 ">
+            <div class="card g-2 mt-2" >
+                <img [src]="pjt.img" alt="card-img-top" style="height: 10rem" alt="example">
+                <div class="card-body ">
+                    <h5 class="card-title"> {{pjt.title}}</h5>
+                    <p class="card-text text-body-secondary" style=" font-size: 12px">{{pjt.description}} </p>
+                    <hr>
+                    <strong style="font-size: 0.7rem;" class="text-secondary"> {{pjt.stack}}</strong>
+                    <br>
+                    <br>
+                    <a *ngIf="pjt.link" [href]="pjt.link"  target="_blank" class="btn btn-light"><i class="col fa fa-internet-explorer " style="font-size:30px; color: #0da6ba" ></i></a>
+                    <a *ngIf="pjt.github" [href]="pjt.github"  target="_blank" class="btn btn-light" style="margin-left: 2px;"><i class="col fa fa-github " style="font-size:30px;"></i></a>
+    
+                </div>
+            </div>
+    
+        </div>
+       </div>
+    </div>
+</div>
+<br>
