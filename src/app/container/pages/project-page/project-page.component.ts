@@ -21,8 +21,8 @@ export class ProjectPageComponent implements OnInit{
       description: 'You can see information about any movie. This application was created using a free API. Credits in the backend for omdbapi.com ',
       link: 'https://emmanuel201290.github.io/movieApp/#/movie/search',
       img: './assets/movie.png',
-      stack: 'AngularJs | ',
-      github: ''
+      stack: 'AngularJs',
+      github: 'https://github.com/emmanuel201290/movieApp'
     },
     {
       title: 'VESA',
