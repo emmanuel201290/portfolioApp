@@ -11,7 +11,7 @@ export class ProjectPageComponent implements OnInit{
   ngOnInit(): void {
     let v_to = document.documentElement.style.getPropertyValue('--h-to');
 
-    document.documentElement.style.setProperty('--h-to','80em')
+    document.documentElement.style.setProperty('--h-to','100em')
     document.documentElement.style.setProperty('--h-from', v_to)
   }
 
