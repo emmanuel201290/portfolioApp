@@ -38,7 +38,7 @@ export class ProjectPageComponent implements OnInit{
       link: 'https://res.cloudinary.com/emmanuel201290/video/upload/v1698696700/bd/2023-10-30_14-07-33_ipg4aq.mp4',
       img: './assets/msr2.png',
       stack: 'ReactJS | Java | Spring MVC | Oracle 11G | © 2021 - DGA',
-      github: 'https://github.com/emmanuel201290/movieApp'
+      github: ''
      }
     ,
     {
