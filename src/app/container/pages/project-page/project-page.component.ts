@@ -17,6 +17,14 @@ export class ProjectPageComponent implements OnInit{
 
   public myProject: Project[] = [
     {
+      title: 'MOVIE INFO',
+      description: 'You can see information about any movie. This application was created using a free API. Credits in the backend for omdbapi.com ',
+      link: 'https://emmanuel201290.github.io/movieApp/#/movie/search',
+      img: './assets/movie.png',
+      stack: 'AngularJs | ',
+      github: ''
+    },
+    {
       title: 'VESA',
       description: 'Ventanilla Electronica de Servicios Aduanero, system created to avoid crowding of people in 2019 in customs processing offices - © 2019 - DGA',
       link: 'https://res.cloudinary.com/emmanuel201290/video/upload/v1638201415/ADRL/vesa/vesa_zgywdf.mp4',
@@ -30,7 +38,7 @@ export class ProjectPageComponent implements OnInit{
       link: 'https://res.cloudinary.com/emmanuel201290/video/upload/v1698696700/bd/2023-10-30_14-07-33_ipg4aq.mp4',
       img: './assets/msr2.png',
       stack: 'ReactJS | Java | Spring MVC | Oracle 11G | © 2021 - DGA',
-      github: ''
+      github: 'https://github.com/emmanuel201290/movieApp'
      }
     ,
     {
